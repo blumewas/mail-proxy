@@ -45,8 +45,6 @@ class HtmlMail extends Mailable
             $css
         );
 
-        Log::debug($rendered);
-
         return $this
             ->html($rendered)
             ->from($this->mail_from, $this->name);
